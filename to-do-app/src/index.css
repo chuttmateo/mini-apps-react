@@ -1,0 +1,5 @@
+body{
+    background: rgb(27,183,191);
+    background: linear-gradient(90deg, rgba(27,183,191,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: 'Chivo Mono', monospace;
+}

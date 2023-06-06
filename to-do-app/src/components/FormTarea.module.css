@@ -1,0 +1,17 @@
+.input, .btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.formulario{
+    font-family: 'Chivo Mono', monospace;
+    padding: 20px;
+}
+.error{
+    color: red;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
