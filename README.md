@@ -1,2 +1,2 @@
 # mini-apps-react
-Mini applicaciones hechas en react
+Mini aplicaciones hechas en react
