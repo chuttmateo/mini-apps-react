@@ -24,6 +24,7 @@ function App() {
             borderRadius: "8px",
             backgroundColor: "white",
             border: "none",
+            fontSize: "20px"
           }}
         >
           Eliminar Todas
