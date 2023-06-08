@@ -23,8 +23,9 @@ function FormEditarTarea(props) {
     return(
         <>
             <form onSubmit={handlesubmit} className={style.formulario}>
-                <input type="text" className={style.input} placeholder="Que hay para hacer" value={tarea} onChange={(e) => setTarea(e.target.value)}/>
+                <input type="text" className={style.input} placeholder="Editando Tarea" value={tarea} onChange={(e) => setTarea(e.target.value)}/>
                 <button type="submit" className={style.btn}>Guardar</button>
+                <button className={style.btnCancelar} onClick={props.cancelar}>Cancelar Edición</button>
             </form>
             {error && <p className={style.error}>{error}</p>}
         </>

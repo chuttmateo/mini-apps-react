@@ -19,7 +19,7 @@ function App() {
       return tarea;
     });
     setTareas(nuevasTareas);
-    setEditandoTarea(null); // Reinicia la tarea editada a nulo después de guardar los cambios
+    setEditandoTarea(null);
   }
   function guardarTarea(tarea) {
     setTareas([...tareas, tarea]);
@@ -32,6 +32,7 @@ function App() {
       <TituloDePagina tareas={tareas} />
       {editandotarea ? (
         <FormEditarTarea
+          cancelar={()=>setEditandoTarea(null)}
           tarea={editandotarea}
           guardarTarea={guardarTareaEditada}
         />
