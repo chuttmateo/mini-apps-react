@@ -8,7 +8,8 @@ function ListadoTareas(props) {
                 return (
                     <div key={tarea.id} className={style.tarea}>
                         <h2>{tarea.valor}</h2>
-                        <button onClick={()=>{props.eliminar(tarea.id)}}>Eliminar</button>
+                        <button className={style.eliminar} onClick={()=>{props.eliminar(tarea.id)}}>Eliminar</button>
+                        <button className={style.editar} onClick={()=>{props.editar(tarea)}}>Editar</button>
                     </div>
                 )
             })}
