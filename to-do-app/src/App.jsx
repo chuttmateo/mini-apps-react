@@ -31,6 +31,7 @@ function App() {
   return (
     <>
       <TituloDePagina tareas={tareas} />
+      <h1 style={{fontSize: "55px"}}>The real lista, bro</h1>
       {editandotarea ? (
         <FormEditarTarea
           cancelar={() => setEditandoTarea(null)}

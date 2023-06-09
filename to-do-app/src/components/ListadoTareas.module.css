@@ -4,25 +4,13 @@
     flex-direction: column;
     gap: 5px;
 }
-h2 .alta{
-    color: crimson;
-    background-color: yellow;
-}
-.media{
-    color: yellow;
-    background-color: yellow;
-}
-.baja{
-    color: green;
-    background-color: yellow;
-}
 .tarea{
     border: solid bisque 1px;
     border-radius: 8px;
     background-color: white;
 
     display: grid;
-    grid-template-columns: 9fr 1fr 1fr;
+    grid-template-columns: 9fr 1fr 1fr 1fr;
 }
 .eliminar{
     font-size: 20px;
