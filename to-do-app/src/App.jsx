@@ -4,6 +4,7 @@ import FormTarea from "./components/FormTarea";
 import ListadoTareas from "./components/ListadoTareas";
 import TituloDePagina from "./components/TituloDePagina";
 import FormEditarTarea from "./components/FormEditarTarea";
+import EliminarTodas from "./components/EliminarTodas";
 
 function App() {
   const [tareas, setTareas] = useState([]);
@@ -32,27 +33,14 @@ function App() {
       <TituloDePagina tareas={tareas} />
       {editandotarea ? (
         <FormEditarTarea
-          cancelar={()=>setEditandoTarea(null)}
+          cancelar={() => setEditandoTarea(null)}
           tarea={editandotarea}
           guardarTarea={guardarTareaEditada}
         />
       ) : (
         <FormTarea guardarTarea={guardarTarea} />
       )}
-      {tareas.length > 2 && (
-        <button
-          onClick={() => setTareas([])}
-          style={{
-            padding: "10px",
-            borderRadius: "8px",
-            backgroundColor: "white",
-            border: "none",
-            fontSize: "20px",
-          }}
-        >
-          Eliminar Todas
-        </button>
-      )}
+      <EliminarTodas tareas={tareas} onEliminar={()=>setTareas([])}/>
       <ListadoTareas
         tareas={tareas}
         eliminar={eliminarTarea}
