@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import { Test } from './components'
 
@@ -25,7 +25,8 @@ function App() {
   return (
     <>
       <button onClick={() => setA(a + 1)}> cambiar a</button>
-      <Test><>{a}</></Test>
+      <Test />
+      {/* <Test><>{a}</></Test> */}
     </>
   )
 }
